@@ -1,0 +1,202 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #d4f1f9; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c7873; 
+            padding: 40px 60px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-start;
+            gap: 60px;
+        }
+
+        .learn-more-btn :focus{
+            outline: none;
+        }
+        .learn-more-btn{
+            box-shadow: none;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #2c7873;
+            margin-bottom: 40px;
+            position: relative;
+            top: 20px ;
+        }
+
+        .image-left {
+            width: 100px;
+            height: 200px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            position: relative;
+            top: 40px;
+            
+        }
+
+        .content-right {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .story-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color:  #0c6b0c;
+            opacity: 0.7;
+            margin-bottom: 15px;
+        }
+
+        .story-text {
+            font-size: 1rem;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        .learn-more-btn {
+            background-color:  #0c6b0c;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+            align-self: flex-start;
+        }
+
+        .learn-more-btn:hover {
+            background-color:  #0c6b0c;
+        }
+
+        .image-bottom-right {
+            width: 60x;
+            height: 40 px;
+            border-radius: 5px;
+            margin-top: 50px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            align-self: flex-end;
+            display: block;
+            clear: both;
+            position:relative ;
+            top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            .container {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .image-left {
+                width: 100%;
+            }
+            .content-right {
+                width: 100%;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+            .image-bottom-right {
+                width: 120px;
+                height:180 ;
+                display: block;
+                clear: both;
+                position: relative ;
+                left: 20px;
+                 bottom: 80px;
+            }
+            nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+    padding: 10px 20px;        
+}
+
+nav a {
+    margin-left: 20px;         
+    text-decoration: none;
+    font-size: 20px;
+    color:#080;
+}
+.nav a{
+    text-decoration: none;
+    margin-right:20px; 
+    font-size: 18px;
+}
+            
+        }
+    </style>
+
+</head>
+<body>
+  
+         <nav style="float: right;">
+             
+            <a href="home.hhh.html" style=" margin: 10px; ; text-decoration: none;    color:#2c7873 ;">Home</a>  
+            <a href="about us .html"   style=" margin: 10px; ;text-decoration: none;     color:#2c7873 ;"    >About us</a>  
+            <a href="our programing...html" style=" margin: 10px;;text-decoration: none;     color:#2c7873;">programes</a>
+         </nav>
+
+    <h1 class="section-title">About</h1>
+ 
+        <div class="container">
+
+      
+       
+        
+     <img style="width: 200px; ;  height:250 ;"      class="image-left"     src="6.jpeg">     
+          
+          
+          
+         <div class="content-right">
+
+        
+            <div>
+                <h4><p class="story-title">Our Story</p></h4>
+                <p class="story-text">
+                  Kinderwald began with a simple belief — that childhood should be wild, free, and full of wonder. We dreamed of a place where children could grow up surrounded by trees instead of walls, by birdsong instead of bells.
+Every day in our forest, children set out on new adventures: they build shelters, follow trails, climb fallen logs, and discover tiny worlds beneath the leaves. Guided by caring mentors and the Forest School philosophy, they learn not only about nature — but through nature.
+
+Here, learning feels like play, and play becomes learning. Confidence grows in muddy hands, friendships blossom beneath the trees, and curiosity leads the way.
+
+Kinderwald was born from our experience as school leaders who have worked with children and families across Italy, Germany, and America. Over the years, we’ve seen how education flourishes when children are free to explore, move, and connect with the world around them. No matter the language or culture, one truth remains the same — children thrive in nature.
+
+Inspired by these experiences, we created Kinderwald: a place where learning feels alive and joyful, where curiosity guides every step, and where the forest itself becomes the classroom.
+
+Kinderwald is more than a school — it’s a community where childhood is cherished, imagination is celebrated, and every child learns to see the world with wonder.
+           <button style="display: flex;flex-direction: column; align-items: flex-start; margin:0 ; padding: 0; display: block;  margin-top:20px ; "><a style="text-decoration: none;" href="our porgraming .html" class="learn-more-btn"> Learn more</a></button>       
+            </div>
+
+                         <img style=" position: relative;top: -110px;width: 150; height: 150;" class="image-bottom-right" src="4.jpeg" alt="Happy student"> 
+             
+            <div class="content-right"></div>
+        </div>
+    </div>
+</body>
+</html>             

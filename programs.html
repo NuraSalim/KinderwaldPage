@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Enriching Programs - Kinderwald</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Open+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg: white;
+      --card-bg: #ffffff;
+      --accent: #a7d3bd;
+      --text: #2f4b41;
+      --max-width: 1100px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-top: 72px; /* Compensate for fixed header height */
+      padding-left: 20px;
+      padding-right: 20px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: var(--max-width);
+    }
+
+    /* ========== Fixed Top Navigation ========== */
+    .header-nav {
+      background: white; 
+      color: #0c6b0c; 
+      font-size: 24px;
+      padding: 16px 24px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-nav nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .header-nav a {
+      text-decoration: none;
+      color: #0c6b0c; 
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+      font-size: 24px;
+      letter-spacing: 0.8px;
+      line-height: 1.3;
+      transition: color 0.2s, text-decoration 0.2s;
+    }
+
+    .header-nav a:hover {
+      color: #0a550a; 
+      text-decoration: underline;
+    }
+
+    /* ========== Hero Section ========== */
+    .hero {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: 34px;
+      font-weight: 700;
+      color: #0c6b0c;
+      letter-spacing: 0.5px;
+    }
+
+    /* ========== Programs Grid ========== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 560px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 28px;
+      }
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 3px solid rgba(167, 211, 189, 0.9);
+      padding: 25px;
+      min-height: 230px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.03);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    .card .title {
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 12px;
+      color: #0c6b0c;
+      line-height: 1.05;
+    }
+
+    .card .desc {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #3b5249;
+      max-width: 20rem;
+    }
+
+    .card.wide .desc {
+      max-width: 22rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Fixed Navigation Bar -->
+  <header class="header-nav" role="banner">
+    <nav>
+      <a href="footer.html">FOOTER Home</a>
+      <a href="ourValue.html">Our Value</a>
+      <a href="programs.html">Programs</a>
+    </nav>
+  </header>
+
+  <!-- Page Content -->
+  <div class="wrap" role="main">
+    <header class="hero" aria-label="Page header">
+      <h1>Our Enriching Programs</h1>
+    </header>
+
+    <section class="grid" aria-label="Programs grid">
+      <article class="card">
+        <h2 class="title">Forest<br />Exploration</h2>
+        <p class="desc">Children experience hands-on learning as they navigate through our forest, gaining confidence
+          and skills while having fun.</p>
+      </article>
+
+      <article class="card">
+        <h2 class="title">Creative Arts</h2>
+        <p class="desc">From painting to music, our creative arts program encourages self-expression and imagination in
+          every child.</p>
+      </article>
+
+      <article class="card">
+        <h2 class="title">Nature Science</h2>
+        <p class="desc">Curriculum focused on nature allows children to understand the environment and biodiversity
+          while fostering curiosity.</p>
+      </article>
+
+      <article class="card">
+        <h2 class="title">Outdoor Play</h2>
+        <p class="desc">Physical activity in a natural setting boosts health and well-being while cultivating
+          friendships.</p>
+      </article>
+
+      <article class="card wide">
+        <h2 class="title">Storytime in the Woods</h2>
+        <p class="desc">Inspiring stories spark imagination during our Read Aloud sessions nestled among the trees.</p>
+      </article>
+
+      <article class="card">
+        <h2 class="title">Caring<br />Community</h2>
+        <p class="desc">Kinderwald is a family where every child is valued and where lasting friendships blossom beneath
+          the forest canopy.</p>
+      </article>
+    </section>
+  </div>
+
+</body>
+
+</html>
